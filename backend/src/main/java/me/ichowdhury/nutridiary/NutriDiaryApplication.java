@@ -17,7 +17,7 @@ public class NutriDiaryApplication {
 	// Routing
 
 	// Test route, to check if endpoints are working.
-	@GetMapping("/hello")	// Routing for http://localhost:8080/hello?name=
+	@GetMapping("/test")	// Routing for http://localhost:8080/test?name=
 	public String hello(@RequestParam(value = "name", defaultValue = "World") String name) {
 		// RequestParam: allow user to assign a value to the variable "name"
 		// in the request sent to this URL. If no name value, use name="World".

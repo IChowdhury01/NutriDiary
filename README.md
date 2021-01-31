@@ -31,7 +31,7 @@ See the [design](/design) folder for more information.
 1. Download the JAR file from the [releases](https://github.com/IChowdhury01/NutriDiary-Adaptive-Nutrition-Tracker/releases) tab.
 2. Open a shell and navigate to the folder with the JAR file: `/backend/target`.
 3. `java -jar nutridiary-<version_number>.jar`
-4. Open your browser and go to http://localhost:8080/hello
+4. Open your browser and go to http://localhost:8080/test
 
 # Contributing
 
