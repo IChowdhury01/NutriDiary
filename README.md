@@ -10,6 +10,20 @@ NutriDiary is a web app made to assist users with calorie tracking and workout l
 
 See the [design](/design) folder for more information.
 
+# Getting Started
+
+## Prerequisites
+
+- [Java JDK 11+](https://www.oracle.com/java/technologies/javase-downloads.html)
+
+## Local Installation
+
+1. Download the JAR file from the releases tab.
+2. Open a shell and navigate to the folder with the JAR file.
+3. `java -jar nutridiary-<version_number>.jar`
+
+4. Open an internet browser and go to `http://localhost:8080/hello`
+
 # Contributing
 
 This project is currently not accepting open-source contributors, though it may in the future.

@@ -5,7 +5,7 @@
 - **Frontend**: HTML/CSS/JS, JQuery, React
 - **Backend**: Java, Spring Boot
 - **Database**: PostgreSQL
-- **Web Server**: Embedded Tomcat
+- **Web Server**: Embedded Apache Tomcat
 - **Deployment**: Heroku
 - **Build Tools**: Maven
 
