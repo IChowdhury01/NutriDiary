@@ -18,7 +18,7 @@ See the [design](/design) folder for more information.
 
 ## Local Installation
 
-1. Download the JAR file from the releases tab.
+1. Download the JAR file from the [releases](https://github.com/IChowdhury01/NutriDiary-Adaptive-Nutrition-Tracker/releases) tab.
 2. Open a shell and navigate to the folder with the JAR file.
 3. `java -jar nutridiary-<version_number>.jar`
 
