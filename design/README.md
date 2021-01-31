@@ -8,6 +8,7 @@
 - **Web Server**: Embedded Apache Tomcat
 - **Deployment**: Heroku
 - **Build Tools**: Maven
+- **Testing:** JUnit
 
 ## Features
 
