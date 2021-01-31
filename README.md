@@ -1,4 +1,4 @@
-![Logo](/assets/logos/nutridiary.jpg)
+![Logo](C:\Users\Ivan\Desktop\Source-Code\WebDevelopment\NutriDiary-Adaptive-Nutrition-Tracker\frontend\assets\logos\nutridiary.jpg)
 
 An adaptive nutrition tracking web app, built with React and Spring Boot.
 
@@ -15,14 +15,23 @@ See the [design](/design) folder for more information.
 ## Prerequisites
 
 - [Java JDK 11+](https://www.oracle.com/java/technologies/javase-downloads.html)
+- [Node.js and NPM](https://nodejs.org/en/download/)
 
 ## Local Installation
 
-1. Download the JAR file from the [releases](https://github.com/IChowdhury01/NutriDiary-Adaptive-Nutrition-Tracker/releases) tab.
-2. Open a shell and navigate to the folder with the JAR file.
-3. `java -jar nutridiary-<version_number>.jar`
+### Frontend
 
-4. Open an internet browser and go to `http://localhost:8080/hello`
+1. Open your shell and navigate to the `/frontend` folder.
+
+2. `npm start`
+3. Open your browser and go to http://localhost:3000/
+
+### Backend
+
+1. Download the JAR file from the [releases](https://github.com/IChowdhury01/NutriDiary-Adaptive-Nutrition-Tracker/releases) tab.
+2. Open a shell and navigate to the folder with the JAR file: `/backend/target`.
+3. `java -jar nutridiary-<version_number>.jar`
+4. Open your browser and go to http://localhost:8080/hello
 
 # Contributing
 
