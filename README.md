@@ -1,2 +1,2 @@
-# NutriDiary: Adaptive TDEE Tracker
+# NutriDiary: Adaptive Nutrition Tracker
 
