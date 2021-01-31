@@ -1,4 +1,4 @@
-![Logo](C:\Users\Ivan\Desktop\Source-Code\WebDevelopment\NutriDiary-Adaptive-Nutrition-Tracker\frontend\assets\logos\nutridiary.jpg)
+![Logo](\frontend\assets\logos\nutridiary.jpg)
 
 An adaptive nutrition tracking web app, built with React and Spring Boot.
 
