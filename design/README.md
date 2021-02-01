@@ -3,12 +3,12 @@
 ## Tech Stack
 
 - **Frontend**: HTML/CSS/JS, JQuery, React
-- **Backend**: Java, Spring Boot
+- **Backend**: Java, Spring Boot, Spring Data JPA, Hibernate
 - **Database**: PostgreSQL
 - **Web Server**: Embedded Apache Tomcat
 - **Deployment**: Heroku
 - **Build Tools**: Maven
-- **Testing:** JUnit
+- **Unit Testing:** JUnit
 
 ## Features
 
