@@ -12,7 +12,7 @@
 
 ## Feature Roadmap
 
-- **v1.0**
+- **v1.0:** Working
   - Account creation
     - Enter goal weekly weight change.
   - Track nutrition info
@@ -22,7 +22,7 @@
   - Calculate TDEE 
     - Auto calculate TDEE based on recent records.
     - Calculate and display recommended daily calorie intake, based on TDEE and goal weekly weight change.
- - **v1.5**
+ - **v1.5:** Ready for live display
     - UI
       - Live display weekly stats and recommended calorie intake. Change when records are modified.  
  - **v2.0**
@@ -34,7 +34,7 @@
      - Password encryption.
      - Goal weekly weight change.
    - Cookies. Remember last sign-in.
- - **v3.0 - Completion**
+ - **v3.0: Completion**
    - Sign in with Google
    - Sync with MyFitnessPal
      - Manual import calories and protein from MyFitnessPal.
