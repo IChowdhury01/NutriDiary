@@ -2,12 +2,12 @@
 
 ## Tech Stack
 
-- **Frontend**: HTML/CSS/JS, JQuery, React
-- **Backend**: Java, Spring Boot, Spring Data JPA, Hibernate
+- **Frontend**: React
+- **Backend**: Spring Boot, Spring Data JPA, Hibernate
 - **Database**: PostgreSQL
 - **Web Server**: Embedded Apache Tomcat
 - **Deployment**: Heroku
-- **Build Tools**: Maven
+- **Build Tools**: Maven, Git
 - **Unit Testing:** JUnit
 
 ## Feature Roadmap
@@ -56,5 +56,6 @@
    - Submit a feature form.
    - Donate button.
  - **v6.0**
+   - Two-factor authentication
    - Import nSuns TDEE 3.0 CSV
    - Export to nSuns TDEE 3.0 CSV
