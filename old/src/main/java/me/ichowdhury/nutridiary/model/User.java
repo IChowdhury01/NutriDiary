@@ -1,11 +1,11 @@
-package me.ichowdhury.nutridiary;
+package me.ichowdhury.nutridiary.model;
 
-import java.util.Objects;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
 
 @Entity
 @Table(name = "users")
