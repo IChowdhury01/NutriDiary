@@ -1,103 +1,42 @@
 package me.ichowdhury.nutridiary.model;
 
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
+
+import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Size;
+import java.util.Set;
+
+@AllArgsConstructor // Lombok automatically generates constructors for the User class. 1 with all fields, 1 with none.
+@NoArgsConstructor
+@Entity // Use this class as a database entity.
+@Data   // Lombok automatically generates getters, setters, and constructors.
+@Table(name="users") // Assign this class to a database titled "user".
 public class User {
 
-    private Long userID;
+    @Id // Primary Key
+    private Long id;    // Unique user id.
 
+    @NonNull
+    @NotEmpty(message = "Username must not be empty.")
+    @Size(min = 3, max = 30, message = "Username must be between 3 and 30 characters.")
     private String username;
+
+    @NonNull
+    @NotEmpty(message = "Password must not be empty.")
+    @Size(min = 5, max = 30, message = "Password must be between 5 and 30 characters.")
     private String password;
-    private double goalWC;   // Weekly weight change goal, ex. -1.5 lbs
+
+    @NotNull(message = "Goal must not be null. Enter 0 instead.")
+    private double goalWWC;   // Goal weekly weight change. Example: -1.5 lbs/week.
+
     private String profilePic;  // Path to uploaded profile photo.
 
-    protected User() {}
-
-    public User(Long userID, String username, String password, Double goalWC) {
-        this.userID = userID;
-        this.username = username;
-        this.password = password;
-        this.goalWC = goalWC;
-        this.profilePic = "";   // Path to default profile photo.
-    }
-
-    public User(Long userID, String username, String password, Double goalWC, String profilePic) {
-        this.userID = userID;
-        this.username = username;
-        this.password = password;
-        this.goalWC = goalWC;
-        this.profilePic = profilePic;
-    }
-
-    public Long getUserID() {
-        return userID;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public Double getGoalWC() {
-        return goalWC;
-    }
-
-    public void setGoalWC(Double goalWC) {
-        this.goalWC = goalWC;
-    }
-
-    public String getProfilePic() {
-        return profilePic;
-    }
-
-    public void setProfilePic(String profilePic) {
-        this.profilePic = profilePic;
-    }
-
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj) {
-            return true;
-        }
-        if (obj == null || obj.getClass() != this.getClass()) {
-            return false;
-        }
-        User user = (User) obj;
-
-        return user.userID == this.userID && user.username.equals(this.username) && user.password.equals(this.password) && user.goalWC == this.goalWC && user.profilePic.equals(this.profilePic);
-    }
-    @Override
-    public int hashCode() {
-        int result = 17;
-        int castedGoalWC = (int) goalWC;
-        result = 31 * result + username.hashCode();
-        result = 31 * result + password.hashCode();
-        result = 31 * result + profilePic.hashCode();
-        result = 31 * result + userID.intValue();
-        result = 31 * result + castedGoalWC;
-
-        return result;
-    }
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("User {");
-        sb.append("ID: ").append(userID);
-        sb.append("Username: ").append(username);
-        sb.append(", Password: ").append(password);
-        sb.append(", Weekly Weight Change Goal: ").append(goalWC);
-        sb.append(" lbs, Profile Picture: ").append(profilePic);
-        sb.append(" }");
-        return sb.toString();
-    }
+//    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "user", orphanRemoval = true)  // Deleting a user delets all of the user's logs.
+//    private Set<Log> logs;
 }

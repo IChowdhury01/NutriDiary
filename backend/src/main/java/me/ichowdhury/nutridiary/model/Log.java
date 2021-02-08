@@ -1,61 +1,30 @@
 package me.ichowdhury.nutridiary.model;
 
-import java.util.Date;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import lombok.NonNull;
 
+import javax.persistence.*;
+import javax.validation.constraints.NotNull;
+import javax.validation.constraints.Positive;
+import java.sql.Date;
+
+@NoArgsConstructor
+@Entity
+@Data
+@Table(name="logs")
 public class Log {
-    private Date date;
+    @Id
+    private Long id;    // Unique log id.
+
+    @NonNull
+    private Date logDate;   // Date of log. In YYYY-MM-DD format
+
     private double weight;
     private int calories;
     private int protein;
 
-    public Log(Date date, double weight, int calories, int protein) {
-        this.date = date;
-        this.weight = weight;
-        this.calories = calories;
-        this.protein = protein;
-    }
-
-    public Log(Date date) {
-        this.date = date;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public double getWeight() {
-        return weight;
-    }
-
-    public void setWeight(double weight) {
-        this.weight = weight;
-    }
-
-    public int getCalories() {
-        return calories;
-    }
-
-    public void setCalories(int calories) {
-        this.calories = calories;
-    }
-
-    public int getProtein() {
-        return protein;
-    }
-
-    public void setProtein(int protein) {
-        this.protein = protein;
-    }
-
-
-    @Override
-    public String toString() {
-        final StringBuilder sb = new StringBuilder("Log { ");
-            sb.append("Date: ").append(date);
-            sb.append("Weight: ").append(weight);
-            sb.append("Calorie Intake: ").append(calories);
-            sb.append("Protein Intake: ").append(protein);
-            sb.append(" }");
-            return sb.toString();
-    }
+    // Establishes a Many-to-One relationship between Logs and a User.
+    @ManyToOne(cascade = CascadeType.PERSIST)   // Persist: when a user is updated, so is the log.
+    private User user;
 }

@@ -49,6 +49,12 @@
      - Display exercises completed (e.g. 3/4 strength training, 2/5 cardio, etc.)
    - Sync with Google Fit
      - Automatic import: daily step counter. Import at same time as MFP data.
+   - Set your own protein goal.
+     - Recommended values (various recommended formulas)
+       - 0.8g / lb bodyweight
+       - 0.64g / lb bodyweight
+       - ...
+     - Custom value.
  - **v5.0**
    - Generate reports
      - Process and visualize last 2-4 weeks data into graphs and other data visualizes. Based on NSun TDEE spreadsheet monthly summaries. 
