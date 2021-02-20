@@ -29,7 +29,6 @@ public class User {
 
     @NonNull
     @NotEmpty(message = "Password must not be empty.")
-    @Size(min = 5, max = 30, message = "Password must be between 5 and 30 characters.")
     private String password;
 
     @NotNull(message = "Goal must not be null. Enter 0 instead.")
@@ -37,6 +36,6 @@ public class User {
 
     private String profilePic;  // Path to uploaded profile photo.
 
-//    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "user", orphanRemoval = true)  // Deleting a user delets all of the user's logs.
-//    private Set<Log> logs;
+    @OneToMany(cascade = CascadeType.ALL, orphanRemoval = true)  // Deleting a user deletes all of the user's logs.
+    private Set<Log> logs;
 }
