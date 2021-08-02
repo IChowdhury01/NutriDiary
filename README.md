@@ -1,4 +1,3 @@
-![Logo](/frontend/assets/logos/nutridiary.jpg)
 
 An adaptive nutrition tracking web app, built with React and Spring Boot.
 
