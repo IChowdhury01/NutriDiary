@@ -1,5 +1,6 @@
 --This PostgreSQL script will run when the Spring Boot app is initialized. It adds test entries to the database.
 
+
 --Empty all tables at startup. Disable for DEPLOYMENT.
 TRUNCATE users CASCADE;
 TRUNCATE logs CASCADE;
