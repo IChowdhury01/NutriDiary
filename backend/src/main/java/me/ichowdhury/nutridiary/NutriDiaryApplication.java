@@ -12,5 +12,4 @@ public class NutridiaryApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(NutridiaryApplication.class, args);
 	}
-
 }
