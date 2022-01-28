@@ -6,11 +6,12 @@
 - **Backend**: Spring Boot, Spring Data JPA, Hibernate
 - **Database**: PostgreSQL
 - **Web Server**: Embedded Apache Tomcat
-- **Deployment**: Heroku
-- **Build Tools**: Maven, Git
+- **Deployment**: AWS
+- **Build Tools**: Maven
 - **Unit Testing:** JUnit
+- **CI/CD:** CircleCI
 
-## Feature Roadmap
+## Feature Roadmap (Tentative)
 
 - **v1.0:** Working
   - Account creation
